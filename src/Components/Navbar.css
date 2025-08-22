@@ -1,0 +1,152 @@
+/* Navbar main */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.dark {
+  background: #111;
+  color: white;
+}
+
+/* Container */
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #e91e63; /* pink hover */
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Search Box */
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  padding: 6px 30px 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  color: gray;
+}
+
+/* Icons */
+.icon {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #e91e63;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dark Mode Adjustments */
+.navbar.dark .search-box input {
+  background: #222;
+  color: white;
+  border: 1px solid #555;
+}
+
+.navbar.dark .search-icon {
+  color: #aaa;
+}
+/* Wishlist / Likes Dropdown */
+.wishlist {
+  position: relative;
+}
+
+.liked-dropdown {
+  position: absolute;
+  top: 30px; /* distance below the heart icon */
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.liked-dropdown p {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
+
+.liked-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.liked-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.liked-item span {
+  font-size: 14px;
+  color: #333;
+}
