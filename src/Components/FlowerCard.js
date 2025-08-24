@@ -3,7 +3,7 @@ import { Heart, ShoppingCart } from "lucide-react";
 import "./FlowerCard.css";
 
 function FlowerCard({ flower, isLiked, onLike }) {
-  if (!flower) return null; // Prevent undefined errors
+  if (!flower) return null;
 
   const handleAddToCart = () => {
     alert(`${flower.name} added to cart!`);
@@ -19,13 +19,25 @@ function FlowerCard({ flower, isLiked, onLike }) {
             className={`icon heart ${isLiked ? "liked" : ""}`}
             onClick={onLike}
           />
-          <ShoppingCart size={24} className="icon cart" onClick={handleAddToCart} />
+          <ShoppingCart
+            size={24}
+            className="icon cart"
+            onClick={handleAddToCart}
+          />
         </div>
       </div>
-      <h3>{flower.name}</h3>
-      <p>{flower.description}</p>
-      <p className="price">${flower.price}</p>
+      <div className="flower-details">
+        <h3>{flower.name}</h3>
+        <p className="description">
+          {flower.description || "A beautiful flower for your garden 🌸"}
+        </p>
+        <p className="price">${flower.price}</p>
+        <button className="buy-btn" onClick={handleAddToCart}>
+          Buy Now
+        </button>
+      </div>
     </div>
   );
 }
+
 export default FlowerCard;
