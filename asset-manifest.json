@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/flowers-web/static/css/main.05d4bfc1.css",
-    "main.js": "/flowers-web/static/js/main.8eba1383.js",
+    "main.css": "/flowers-web/static/css/main.45dc4672.css",
+    "main.js": "/flowers-web/static/js/main.033b9631.js",
     "static/js/453.97b90a09.chunk.js": "/flowers-web/static/js/453.97b90a09.chunk.js",
     "index.html": "/flowers-web/index.html",
-    "main.05d4bfc1.css.map": "/flowers-web/static/css/main.05d4bfc1.css.map",
-    "main.8eba1383.js.map": "/flowers-web/static/js/main.8eba1383.js.map",
+    "main.45dc4672.css.map": "/flowers-web/static/css/main.45dc4672.css.map",
+    "main.033b9631.js.map": "/flowers-web/static/js/main.033b9631.js.map",
     "453.97b90a09.chunk.js.map": "/flowers-web/static/js/453.97b90a09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05d4bfc1.css",
-    "static/js/main.8eba1383.js"
+    "static/css/main.45dc4672.css",
+    "static/js/main.033b9631.js"
   ]
 }
