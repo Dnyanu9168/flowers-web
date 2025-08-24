@@ -28,5 +28,4 @@ function FlowerCard({ flower, isLiked, onLike }) {
     </div>
   );
 }
-
 export default FlowerCard;
